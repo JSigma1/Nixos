@@ -28,7 +28,7 @@
         specialArgs = { inherit inputs system; };
 
         modules = [
-          ./configuration/configuration.nix
+          ./jigsaw/configuration.nix
         ];
       };
     };

@@ -13,7 +13,7 @@
   home.stateVersion = "25.05";
 
   imports = [
-    ./hm-modules/git.nix
+    ../homeManagerModules/cliPrograms/git.nix
   ];
 
 }

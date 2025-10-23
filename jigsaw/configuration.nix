@@ -7,11 +7,11 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./hardware-configuration.nix #change this for you system hardware
       inputs.home-manager.nixosModules.home-manager
-      ./modules/desktop.nix
-      ./modules/packages.nix
-      ./modules/system.nix
+      ../nixosModules/desktop.nix
+      ../nixosModules/packages.nix
+      ../nixosModules/system.nix
     ];
 
   # Bootloader.
@@ -32,7 +32,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      jigsaw = import ../homemanager/home.nix;
+      jigsaw = import ./home.nix;
     };
   };
 
