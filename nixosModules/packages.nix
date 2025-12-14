@@ -9,17 +9,18 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    zed-editor
-    brave
-    btop
+    vivaldi
+    vscode
     ghostty
     git
-    bat
     tealdeer
     fastfetch
     discord
-    home-manager
+    wget
+    neovim
+    btop
+    obsidian
+    noto-fonts-cjk-sans 
+    noto-fonts-cjk-serif
   ];
 }
